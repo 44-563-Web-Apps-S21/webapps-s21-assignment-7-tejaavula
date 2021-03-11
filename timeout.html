@@ -17,10 +17,8 @@
     <button class="btn btn-primary" onclick="startTime()"> Start Timer </button>
     <button id="react" class="btn btn-primary" onclick="recordReact()"> React Now </button>
     <script>
-
-    myTime = undefined;
-
-    function recordReact() {                        
+      myTime = undefined;
+     function recordReact() {                        
       myTime = Date.now();
       console.log("Time : " + YourTime);
     
@@ -31,10 +29,8 @@
         return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
       }
     function startTime() {
-            
             for (var i = 0; i < 4; i++) {
-      
-                     setTimeout(function (i) {
+                   setTimeout(function (i) {
                                  document.getElementById("countdown").innerHTML = i
                                   }, ((3 - i) * 1000), i)
       
