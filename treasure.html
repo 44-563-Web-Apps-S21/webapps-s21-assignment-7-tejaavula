@@ -1,75 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Seventh Assignment</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-    p {
-        background-color:lightcoral;
-       font-family: Times;
-        border: 5px solid lavender;
-        padding: 10px;
-        }
-     #clicks{
-        background-color:white;
-        font-family: Times;
-        border: 5px solid lavender;
-        padding: 10px;
-    }
-    #distance{
-        background-color:lightgreen;
-        font-family: Times;
-        border: 5px solid lavender;
-        padding: 10px;
-    }
-</style>
-</head>
-<body>
-<h1>Find the Treasure by Tejaswi Avula</h1>
-<p>Click on the squares to find the treasure</p>
-<p id="clicks">Number of clicks is zero</p>
-<p id="distance">Distance is unknown</p>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>      
-        <div class="col-sm-2"><img src="dustyBook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div> 
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-      </div><br>
-      <div class="row">
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>      
-        <div class="col-sm-2"><img src="dustyBook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div> 
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-      </div><br>
-      <div class="row">
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>      
-        <div class="col-sm-2"><img src="dustyBook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div> 
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-      </div><br>
-      <div class="row">
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>      
-        <div class="col-sm-2"><img src="dustyBook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div> 
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-      </div><br>
-      <div class="row">
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book" width="200" height ="200"></div>      
-        <div class="col-sm-2"><img src="dustyBook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div> 
-        <div class="col-sm-2"><img src="dustybook.jpg" class="rounded img-fluid" alt="book"width="200" height ="200"></div>
-      </div><br>
+<html>
 
+    <head>
+        <title>Seventh Assignment</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+          p {
+              background-color:lightcoral;
+             font-family: Times;
+              border: 5px solid lavender;
+              padding: 10px;
+              }
+           #clicks{
+              background-color:white;
+              font-family: Times;
+              border: 5px solid lavender;
+              padding: 10px;
+          }
+          #distance{
+              background-color:lightgreen;
+              font-family: Times;
+              border: 5px solid lavender;
+              padding: 10px;
+          }
+      </style>
+      </head>
+      <body>
+      <h1>Find the Treasure by Tejaswi Avula</h1>
+      <p>Click on the squares to find the treasure</p>
+      <p id="clicks">Number of clicks is zero</p>
+      <p id="distance">Distance is unknown</p>
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image0" onclick="makeGuess(0)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image1" onclick="makeGuess(1)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image2" onclick="makeGuess(2)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image3" onclick="makeGuess(3)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image4" onclick="makeGuess(4)" class="rounded img-fluid" alt="book"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image5" onclick="makeGuess(5)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustybook.jpg" id="image6" onclick="makeGuess(6)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image7" onclick="makeGuess(7)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image8" onclick="makeGuess(8)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image9" onclick="makeGuess(9)" class="rounded img-fluid" alt="book"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image10" onclick="makeGuess(10)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image11" onclick="makeGuess(11)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image12" onclick="makeGuess(12)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustybook.jpg" id="image13" onclick="makeGuess(13)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image14" onclick="makeGuess(14)" class="rounded img-fluid" alt="book"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image15" onclick="makeGuess(15)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image16" onclick="makeGuess(16)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image17" onclick="makeGuess(17)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image18" onclick="makeGuess(18)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image19" onclick="makeGuess(19)" class="rounded img-fluid" alt="book"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image20" onclick="makeGuess(20)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image21" onclick="makeGuess(21)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image22" onclick="makeGuess(22)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image23" onclick="makeGuess(23)" class="rounded img-fluid" alt="book"></div>
+            <div class="col-sm-2 "><img src="dustyBook.jpg" id="image24" onclick="makeGuess(24)" class="rounded img-fluid" alt="book"></div>
+        </div><br>
+    </div>
+    <script>
+
+        var ids = ["image0", "image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14","image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
+        var clickCount = 0;
+        var treasureLocation = 18;
+        function makeGuess(position) {
+
+            id = ids[position];
+            imageElement = document.getElementById(id);
+
+            if (position == treasureLocation) {
+                imageElement.src = "treasure.jpg"
+            }
+            else {
+                imageElement.src = "bulb.jpg"
+            }
+
+            clickCount++;
+
+            document.getElementById("clicks").innerHTML = "Count of the clicks is " + clickCount + ".";
+
+            document.getElementById("distance").innerHTML = " The Distance to the treasure is  " + distance(position, treasureLocation) + ".";
+
+        }
+
+        function distance(pos1, pos2) {
+
+            var a =
+                [ [0, 1, 2, 3, 4], [5, 6, 7, 8, 9],[10, 11, 12, 13, 14], [15, 16, 17, 18, 19],[20, 21, 22, 23, 24]  ]
+            var a1 = 0, b1 = 0, a2 = 0, b2 = 0;
+
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++)
+                if (a[i][j] == pos1) {
+                    a1 = i;
+                    b1 = j;
+                    break;  
+                }
+            }
+
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++)
+                if (a[i][j] == pos2) {
+                    a2 = i;
+                    b2 = j;
+                    break;
+                }
+            }
+
+            var treasureDistance = Math.abs(a2-a1) + Math.abs(b2-b1);
+             return treasureDistance;
+        }
+
+    </script>
 </body>
 </html>
