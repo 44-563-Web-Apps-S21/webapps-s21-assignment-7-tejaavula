@@ -75,9 +75,16 @@
     </div>
     <script>
 
-        var ids = ["image0", "image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14","image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
+        var ids = ["image0", "image1", "image2", "image3", "image4",
+            "image5", "image6", "image7", "image8", "image9",
+            "image10", "image11", "image12", "image13", "image14",
+            "image15", "image16", "image17", "image18", "image19",
+            "image20", "image21", "image22", "image23", "image24"];
+
         var clickCount = 0;
         var treasureLocation = 18;
+        
+
         function makeGuess(position) {
 
             id = ids[position];
@@ -94,7 +101,7 @@
 
             document.getElementById("clicks").innerHTML = "Count of the clicks is " + clickCount + ".";
 
-            document.getElementById("distance").innerHTML = " The Distance to the treasure is  " + distance(position, treasureLocation) + ".";
+            document.getElementById("distance").innerHTML = " The Distance to the treasure is " + distance(position, treasureLocation) + ".";
 
         }
 
