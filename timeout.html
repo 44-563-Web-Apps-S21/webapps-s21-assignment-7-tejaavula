@@ -18,25 +18,27 @@
     <button id="react" class="btn btn-primary" onclick="recordReact()"> React Now </button>
     <script>
       myTime = undefined;
+      var min=2
+    var max=10
      function recordReact() {                        
       myTime = Date.now();
       console.log("Time : " + YourTime);
-    
     }
     function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
-      }
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
     function startTime() {
-            for (var i = 0; i < 4; i++) {
-                   setTimeout(function (i) {
-                                 document.getElementById("countdown").innerHTML = i
-                                  }, ((3 - i) * 1000), i)
-      
-                              }
-                  
-                              for (var i = 0; i < 4; i++){
+       var countstart = getRandomIntInclusive(2, 10);
+       console.log(countstart);
+      for (var i = 0; i < countstart; i++) {
+
+             setTimeout(function (i) {
+                  document.getElementById("countdown").innerHTML = i
+                       }, ((countstart-1-i) * 1000), i)
+
+     
                   setTimeout(function (i) {
                      
               if (myTime == undefined) {
@@ -53,7 +55,7 @@
                 document.getElementById("react").classList.remove("btn-danger");
              
               }
-            }, 3000);
+            }, (countstart-1)*1000);
           }
             
           }
